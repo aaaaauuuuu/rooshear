@@ -1,0 +1,229 @@
+/* headerここから */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.475);
+}
+.left {
+    width: 200px;
+    height: 40px;
+    padding: 20px 0 0 20px;
+    font-size: 30px;
+    font-family: 'Phosphate',sans-serif;
+    color: black;
+}
+.header-right {
+    display: flex;
+    padding: 20px 0 0 20px;
+}
+.icons {
+    margin-left: 30px;
+    font-family: 'Skia-Regular_Black',sans-serif;
+    color: black;
+}
+.icons:last-child {
+    margin-right: 30px;
+}
+.fa-comments {
+    margin-left: 30px;
+    font-size: 20px;
+}
+.fa-store-alt {
+    margin-left: 60px;
+    font-size: 20px;
+}
+.fa-smile-beam {
+    margin-left: 25px;
+    font-size: 20px;
+}
+.fa-envelope {
+    font-size: 20px;
+    margin-left: 30px;
+}
+.fa-gratipay {
+    font-size: 20px;
+    margin-left: 20px;
+}
+/* headerここまで */
+
+/* Topここから */
+.top {
+    width: 100%;
+    height: 16px;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    font-family: 'Skia-Regular_Black',sans-serif;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.475);
+    background-color: olivedrab;
+    font-size: 20px;
+    color: rgba(255, 255, 0, 0.729);
+}
+/* Topここまで */
+
+/* mainここから */
+main {
+    width: 100%;
+    height: 90vh;
+    background:whitesmoke;
+}
+section {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+/* カレンダーを加えたい */
+.main-left img {
+    width: 300px;
+    height: 75vh;
+}
+
+.main-right {
+    width: 70%;
+    height: 600px;
+    background: whitesmoke;
+    border: 2px solid silver;
+    font-size: 20px;
+    color: olive;
+    padding-top: 20px;
+}
+.text-box {
+    margin-top: 20px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Andale Mono',sans-serif;
+}
+
+/* btnここから */
+.btn-flat-logo {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: papayawhip;
+    background: olive;
+    transition: .4s;
+    margin-top: 40px;
+    margin: 30px 0 60px 0;
+  }
+  
+  .btn-flat-logo:hover {
+    background: papayawhip;
+    color: olive;
+  }
+  /* btnここまで */
+
+.text,
+.date,
+.title {
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+}
+textarea {
+    width: 400px;
+    height: 220px;
+    font-size: 15px;
+}
+@media screen and (min-width: 411px) and (max-width: 500px) {
+    .header {
+        width: 100%;
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .icons p {
+      display: none;
+    }
+    .icons {
+        margin: 0 auto 0 -40px;
+        font-size: 10px;
+    }
+    .top {
+        width: 100%;
+        margin: 0 auto;
+    }
+    main div {
+        padding: 10px auto;
+    }
+    .main-left img {
+        display: none;
+    }
+    .main-right {
+        width: 100%;
+        height: 100vh;
+    }
+}
+@media screen and (min-width:360px) and (max-width: 410px) {
+    .header {
+        width: 100%;
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .icons p {
+      display: none;
+    }
+    .icons {
+        margin: 0 auto;
+        font-size: 10px;
+    }
+    .top {
+        width: 120%;
+        margin: 0 auto;
+    }
+    main {
+        width: 100%;
+    }
+    .main-left img {
+        display: none;
+        margin-top: 0;
+    }
+    .main-right {
+        width: 100%;
+        height: 100vh;
+        margin-top: -60px;
+    }
+
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .header {
+        width: 100vw;
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .icons p {
+      display: none;
+    }
+    .icons {
+        margin: 0 auto;
+        font-size: 10px;
+    }
+    .top {
+        width: 140%;
+        margin: 0 auto;
+    }
+    main {
+        width: 100%;
+        height: 550px;
+    }
+    .main-left img {
+        display: none;
+    }
+    .main-right {
+        width: 100%;
+        margin: -60px auto 0 auto;
+    }
+
+    
+}

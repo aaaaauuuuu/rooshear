@@ -1,0 +1,481 @@
+/* headerここから */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.475);
+}
+.left {
+    width: 200px;
+    height: 40px;
+    padding: 20px 0 0 20px;
+    font-size: 30px;
+    font-family: 'Phosphate',sans-serif;
+}
+.header-right {
+    display: flex;
+    padding: 20px 0 0 20px;
+}
+.icons {
+    margin-left: 30px;
+    font-family: 'Skia-Regular_Black',sans-serif;
+    color: black;
+}
+.icons:last-child {
+    margin-right: 30px;
+}
+.fa-search {
+    margin-left: 12px;
+    font-size: 20px;
+}
+.fa-user-circle {
+    margin-left: 15px;
+    font-size: 20px;
+}
+.fa-smile-beam {
+    margin-left: 25px;
+    font-size: 20px;
+}
+.fa-map-marked-alt {
+    margin-left: 5px;
+    font-size: 20px;
+}
+/* headerここまで */
+
+/* Top検索画面 */
+.top {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 10px 0;
+    font-family: 'Skia-Regular_Black',sans-serif;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.475);
+    background-color: orange;
+    position: relative;
+}
+.top input {
+    margin-right: 10px;
+}
+.fa-male {
+    color: rgb(32, 32, 245);
+}
+.fa-female {
+    color: red;
+}
+.top div {
+    margin-right: 50px;
+}
+/* Topはここまで */
+
+.fadein {
+    display: flex;
+    justify-content: center;
+}
+
+/* fadeInする部分ここから */
+.select-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search { 
+    font-family: 'Phosphate',sans-serif;
+    margin: 10px;
+    position: absolute;
+    display: none;
+}
+.search02 {
+    display: none;
+    position: absolute;
+    font-family: 'Phosphate',sans-serif;
+    margin: 10px;
+}
+
+.search h1,
+.search02 h1 {
+    font-size: 30px;
+}
+.male {
+    margin-left: 10px;
+    color: blue;
+}
+.female {
+    margin-left: 10px;
+    color: red;
+}
+
+.deta,
+.age {
+    margin-top: 15px;
+}
+.searchbtn {
+    margin-top: 30px;
+    font-family: 'Phosphate',sans-serif;
+    background: white;
+    color: rgb(168, 161, 161);
+    font-size: 20px;
+    border: 1px silver solid;
+}
+
+/* fadeInする部分ここまで */
+
+/* mainここから */
+.title {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding-top: 180px;
+    font-size: 80px;
+    font-family: 'Trattatello',sans-serif;
+    background-image: url(./img/IMG_1440.jpg);
+}
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS',sans-serif;
+    color: rgba(213, 213, 213, 0.749);
+}
+/* mainここまで */
+
+/* asideここから */
+aside {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width:300px;
+    height: 180px;
+    margin: 30px 0 0 60px;
+}
+.box:first-child {
+    margin-left: 0;
+}
+.box span {
+    font-size: 20px;
+    font-family: 'Trebuchet MS',sans-serif;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+.box-icon {
+    margin: 10px 0 0 20px;
+    font-size: 30px;
+    color: rgb(86, 126, 244);
+}
+/* asideここまで */
+
+/* footerここから */
+footer {
+    width: 100%;
+    height: 28px;
+    background: blue;
+    font-size:18px;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+}
+/* footerここまで */
+
+/* レスポンシブ対応 */
+@media screen and (min-width: 700px) and (max-width: 750px) {
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    aside .box {
+        width: 100vw;
+        height: 150px;
+        margin: 0 auto;
+    }
+    aside .box:first-child {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 628px) and (max-width: 700px) {
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    aside .box {
+        width: 70vw;
+        height: 150px;
+        margin: 0 auto;
+    }
+    aside .box:first-child {
+        margin: 20px 0 0 100px;
+    }
+    .icons {
+        margin: 0 auto;
+    } 
+}
+
+@media screen and (min-width: 500px) and (max-width: 628px) {
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    aside .box {
+        width: 70vw;
+        height: 150px;
+        margin: 0 auto;
+    }
+    aside .box:first-child {
+        margin: 20px 0 0 100px;
+    }
+    .header-right {
+        display: none;
+    }
+}
+@media screen and (min-width: 414px) and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        width: 100vw;
+        text-align: center;
+    }
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    aside .box {
+        width: 80vw;
+        height: 70px;
+        margin: 0 auto;
+    }
+    aside .box:first-child {
+        margin: 20px 0 0 60px;
+    }
+    .header-right {
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .subtitle {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+    .icons p {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .search,
+    .search02 {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    .header {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        width: 100vw;
+        text-align: center;
+    }
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    aside .box {
+        width: 80vw;
+        height: 150px;
+        margin: 20px auto 0 auto;
+    }
+    .box span {
+        font-size: 16px;
+    }
+    aside .box:first-child {
+        margin: 10px auto 0 auto;
+    }
+    aside .box:last-child {
+        margin-bottom: 20px;
+    }
+    .header-right {
+       margin: 0 auto;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .subtitle {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+    .icons p {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .search,
+    .search02 {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .header {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        width: 100vw;
+        text-align: center;
+    }
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    .box span {
+        font-size: 16px;
+    }
+    
+    aside .box {
+        width: 70vw;
+        height: 250px;
+        margin: 20px auto 0 auto;
+    }
+    aside .box:first-child {
+        margin: 20px 0 0 90px;
+    }
+    aside .box:last-child {
+        margin-bottom: 40px;
+    }
+    .header-right {
+       margin: 0 auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+    .icons p {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .search,
+    .search02 {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 375px) {
+    .header {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        width: 100vw;
+        text-align: center;
+    }
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    aside .box {
+        width: 50vw;
+        height: 250px;
+        margin: 20px auto 0 auto;
+    }
+    aside .box:first-child {
+        margin: 10px auto 0 auto;
+    }
+    aside .box:last-child {
+        margin-bottom: 40px;
+    }
+    .header-right {
+       margin: 0 auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+    .icons p {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .search,
+    .search02 {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .header {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        width: 100vw;
+        text-align: center;
+    }
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    aside .box {
+        width: 40vw;
+        height: 250px;
+        margin: 20px auto 0 auto;
+    }
+    aside .box:first-child {
+        margin: 20px 0 0 90px;
+    }
+    aside .box:last-child {
+        margin-bottom: 40px;
+    }
+    .header-right {
+       margin: 0 auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+    .icons p {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .search,
+    .search02 {
+        width: 100vw;
+    }
+}

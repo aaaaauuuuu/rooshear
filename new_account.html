@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./new_account.css">
+
+</head>
+<body>
+
+        <form method="POST" action="./check.php" enctype="multipart/form-data">
+            <!-- headerここから -->
+            <header class="header">
+                <p class="left">Roo Share</p>
+            </header>
+            <!-- headerここまで -->
+
+            <!-- mainここから -->
+            <main class="main">
+                <div class="main-left">
+                    <ul class="box">
+                        <li><i class="list fas fa-exclamation-triangle"></i>事前にご確認下さい。</li>
+                        <a href=""><li><i class="list fas fa-bookmark"></i>利用事項</li></a>
+                        <a href=""><li><i class="list fas fa-sms"></i>利用できるツールの説明</li></a>
+                        <a href=""><li><i class="list fas fa-yen-sign"></i>決済方法</li></a>
+                        <a href=""><li></li></a>
+                    </ul>
+                </div>
+                <div>
+                    <div class="form-box">
+                        <h1>Create Account<i class="far fa-user-circle signin-logo"></i></i></h1>
+            
+                        
+                        <div class="inform">
+                            <div class="from">
+                                Nickname<br>
+                                <input class="name act" type="text" name="nickname" style="width: 150px" required>
+                            </div>
+                            <div class="from">
+                                Password<br>
+                                <input class="pass act" type="password" name="password" style="width: 150px" required>
+                            </div>
+                            <div class="from">
+                                Email<br>
+                                <input class="email act" type="email" name="email" style="width: 200px" required>
+                            </div>
+                            <div class="from">
+                                <input class="male" type="radio" name="gender" value="1" required>
+                                Male <i class="fas fa-male"></i>
+                                <input class="female" type="radio" name="gender" value="2" required>
+                                Femail <i class="fas fa-female"></i><br>
+                            </div>
+                            <div class="from">
+                                Age<br>
+                                <input class="age" type="text" name="age" style="width:50px" required>歳
+                            </div>
+                            <div>
+                                <input class="file" type="file" name="file">
+                            </div>
+            
+                            <button class="btn-flat-logo">
+                                <i class="fa fa-chevron-right"></i> NEXT
+                              </button>
+                </div>
+                </main>
+            </form>
+        </body>
+    </html>
+    

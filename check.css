@@ -1,0 +1,75 @@
+/* headerここから */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.475);
+}
+.left {
+    width: 200px;
+    height: 40px;
+    padding: 20px 0 0 20px;
+    font-size: 30px;
+    font-family: 'Phosphate',sans-serif;
+}
+
+/* headerここまで */
+
+/* formここから */
+
+.container {
+    padding: 100px 0 0 300px;
+}
+.container p {
+    text-align: center;
+    margin-left: -300px;
+    font-size: 25px;
+}
+
+.fa-pencil-alt {
+    color: olive;
+    margin-left: 10px;
+}
+.form {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+}
+.title {
+    border: 1px peru solid;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    border-left: 20px solid orange;
+}
+.result {
+    border: 1px peru solid;
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* 確認btnここから */
+.btn-flat-logo {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: peru;
+    background: papayawhip;
+    transition: .4s;
+    margin-top: 40px;
+    margin: 60px 0 60px 650px;
+  }
+  
+  .btn-flat-logo:hover {
+    background: peru;
+    color: papayawhip;
+  }
+  /* 確認btnここまで */

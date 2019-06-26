@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roo SHARE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- headerここから -->
+    <header class="header">
+        <p class="left">Roo Share</p>
+        <div class="header-right">
+            <a href="./search_page/search.php"><div class="icons">
+                <i class="fas fa-search"></i>
+                <p>Search</p>
+            </div></a>
+            <a href="./sign_in/sign_in.php"><div class="icons">
+                <i class="far fa-user-circle"></i>
+                <p>Account</p>
+            </div></a>
+            <a href="./new_post/new_post.php"><div class="icons">
+                <i class="far fa-smile-beam"></i>
+                <p>New post</p>
+            </div></a>
+            <div class="icons">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Map</p>
+            </div>
+        </div>
+    </header>
+    <!-- headerこ子まで -->
+
+    <!-- mainここから -->
+    <main>
+        <div class="top">
+            <div>
+            <input id="male" type="radio" name="gender" value="1">Male
+            <i class="fas fa-male"></i>
+            </div>
+            <div>
+            <input id="female" type="radio" name="gender" value="2">Female
+            <i class="fas fa-female"></i>
+            </div>
+        </div>
+
+        <!-- fadeInする部分 -->
+                <!-- shearchここから -->
+        <div class=select-box>
+            <div class="search search01">
+                <h1>Male<i class="fas fa-male male"></i></h1>
+                <div class="data-box">
+                    <div>
+                      Check-In：<input class="date" type="date" name="date">
+                    </div>
+                    <div>
+                      Check-Out：<input class="date" type="date" name="date">
+                    </div>
+                </div>
+ 
+                <select class="age" name="age">
+                    <option value="">Please select your age</option>
+                    <option value="20歳未満">Less than 20 year old</option>
+                    <option value="20-29歳">20-29 year old</option>
+                    <option value="30-39歳">30-39 year old</option>
+                    <option value="40-49歳">40-49 year old</option>
+                    <option value="50-59歳">50-59 year old</option>
+                </select>
+                
+                <button class="searchbtn" type="submit">Search</button>
+            </div>
+            <!-- shearchここから  -->
+    
+            <!-- shearchここから -->
+            <div class="search02 search03">
+                <h1>Female<i class="fas fa-female female"></i></h1>
+                <div class="data-box">
+                    <div>
+                      Check-In：<input class="date" type="date" name="date">
+                    </div>
+                    <div>
+                      Check-Out：<input class="date" type="date" name="date">
+                    </div>
+                </div>
+    
+                <select class="age" name="age">
+                    <option value="">Please select your age</option>
+                    <option value="20歳未満">Less than 20 year old</option>
+                    <option value="20-29歳">20-29 year old</option>
+                    <option value="30-39歳">30-39 year old</option>
+                    <option value="40-49歳">40-49 year old</option>
+                    <option value="50-59歳">50-59 year old</option>
+                </select>
+                
+                <button class="searchbtn" type="submit">Search</button>
+            </div>
+            <!-- shearchここから  -->
+        </div>
+
+
+        <!-- fadeIn終了 -->
+
+        <div class="title">Single Trip　×　Hotels
+        <p class="subtitle">ーShall we find a new travel style?ー</p></div>
+    </main>
+    <!-- mainここまで  -->
+
+    <!-- asideここから -->
+    <aside>
+        <div class="box">
+            <i class="box-icon fas fa-user-shield"></i>
+            <p><span>安全で安心な予約</span><br> Roo Shareは沖縄県の旅行会社と提携している安全なサイト</p>
+        </div>
+        <div class="box">
+                <i class="box-icon fas fa-assistive-listening-systems"></i>
+            <p><span>カスタマーレビュー</span><br> Roo Shareでは実際宿泊したトラベラーのレビューでピッタリの旅行スタイルをお手伝い</p>
+        </div>
+        <div class="box">
+            <i class="box-icon fas fa-sms"></i>
+            <p><span>チャットなどのツールの配備</span><br> Roo Shareでは旅行前にRoom Mateとチャットで情報交換できるツールを完備。</p>
+        </div>
+    </aside>
+    <!-- asideここまで -->
+    
+    <!-- footerここから -->
+    <footer>提供会社：JUMBO TOURS</footer>
+    <!-- footerここまで -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

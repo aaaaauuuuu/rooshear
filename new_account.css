@@ -1,0 +1,113 @@
+/* headerここから */
+.header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.475);
+}
+.left {
+    width: 200px;
+    height: 40px;
+    padding: 20px 0 0 20px;
+    font-size: 30px;
+    font-family: 'Phosphate',sans-serif;
+}
+
+/* headerここまで */
+
+/* mainここから */
+/* left側ここから */
+.main {
+    display: flex;
+}
+
+.main-left {
+    width: 400px;
+    height: 500px;
+    background: papayawhip;
+    margin: 100px 0 0 0;
+    border-left: 50px solid red;
+}
+.box {
+    width: 300px;
+    height: 400px;
+    padding-top: 80px;
+    list-style: none;
+    margin-left: -20px;
+}
+
+.box li {
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: bolder;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.781);
+    color: black;
+}
+.fa-bookmark,
+.fa-sms,
+.fa-yen-sign {
+    color: rgba(0, 0, 255, 0.829);
+}
+.list {
+    margin-right: 10px;
+}
+.fa-exclamation-triangle {
+    color: red;
+}
+/* left側ここまで */
+
+/* right側ここから */
+.form-box {
+    width: 800px;
+    height: 600px;
+    padding: 50px;
+    margin: 50px 0 0 130px;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Andale Mono',sans-serif;
+    color: peru;
+}
+.signin-logo {
+    margin-left: 10px;
+    font-size: 40px;
+}
+.inform {
+    font-family: 'Andale Mono',sans-serif;
+}
+.from {
+    margin-top: 20px
+}
+.name,
+.pass,
+.email,
+.age {
+    border-radius: 5px;
+}
+.fa-male {
+    color: rgb(32, 32, 245);
+}
+.fa-female {
+    color: red;
+}
+.file {
+    margin-top: 30px;
+    font-family: 'Andale Mono',sans-serif;
+}
+.btn-flat-logo {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: peru;
+    background: papayawhip;
+    transition: .4s;
+    margin-top: 40px;
+  }
+  
+  .btn-flat-logo:hover {
+    background: peru;
+    color: papayawhip;
+  }
+/* right側ここまで */

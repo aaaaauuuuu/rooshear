@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shear with US</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- <link rel="shourtcut icon" href="fa-hand-holding-heart"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-fluid header">
+        <div class="header">
+            <div class="icon">
+                <h1>Roo SHARE × JUMBOTOURS</h1>
+            </div>
+            <div class="login">
+                <button class="payment"><i class="fas fa-yen-sign"></i>JPY</button>
+                <a href="../login/login.html"><button class="log">Log in</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container main">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item1">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="flights" aria-selected="true">Flights</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="hotels" aria-selected="false">Hotels</a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="bg">
+            <ul class="checkbox">
+                <div class="left">
+                <input type="radio" name="flights" class="box" id="" value="return"><li>Return</li></div>
+                <div class="right">
+                <input type="radio" name="flights" class="box" id="" value="oneway"><li>Onway</li></div>
+            </ul>
+
+            <form>
+                <div class="formbox">
+                    
+                    From: <input type="text" name="from" class="from" placeholder="韓国　ソウル（ICN）">
+                    <button class="btn"><i class="fas fa-exchange-alt"></i></button>
+                    To: <input type="text" name="to" class="to" placeholder="沖縄 那覇 (OKA)">
+                </div>
+
+                <div class="date">
+                    <div>出発日　<input type="date" name="example" value="2020-02-16"></div>
+                    <div class="middle">現地出発日 <input type="date" name="example" value="2020-02-20"></div>
+                </div>
+
+                <div id="seat">
+                <div>座席種別および旅行者</div>
+                <input type="text" name="seat" placeholder="">
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">直行便のみ</label>
+                </div>
+
+                <button class="checkme">Search flights<i class="fas fa-arrow-right"></i></button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid aside">
+        <div class="flight_group">
+            <h2>Flights</h2>
+            <i class="fas fa-plane"></i>
+        </div>
+
+            <div class="flight_bg">
+                <div class="bg1">
+                    <span>O</span>kinawa<br>
+                    <img src="../img/okinawa_airport.jpg" alt="">
+                </div>
+                <div class="bg2">
+                        <span>I</span>shigaki<br>
+                    <img src="../img/ishigaki_airport.jpg" alt="">
+                </div>
+                <div class="bg3">
+                        <span>K</span>umejima<br>
+                    <img src="../img/kumejima_airport.jpeg" alt="">
+                </div>
+            </div>
+    </div>
+  <div class="container footer">
+      <p>航空会社一覧</p>
+    <ul class="airlines">
+        <li>ASHIANA AIRLINES</li>
+        <li>KOREAN AIR</li>
+        <li>JIN AIR</li>
+        <li>JEJU AIR</li>
+        <li>T'WAY</li>
+        <li>EASTAR JET</li>
+        <li>AIR SEOUL</li>
+    </ul>
+    <ul class="airlines">
+        <li>CHINA EASTERN</li>
+        <li>JUNEYAO AIR</li>
+        <li>AIR CHINA</li>
+        <li>CAPITAL AIRLINES</li>
+        <li>CHINA AIRLINES</li>
+        <li>EVA AIR</li>
+        <li>TIGER AIR</li>
+        <li>MANDARIN AIRLINES</li>
+        <li>HONGKONG AIRLINES</li>
+        <li>CATHAY DRAGON</li>
+    </ul>
+    <ul class="airlines">
+        <li>JETSTAR</li>
+        <li>PEACH</li>
+        <li>VANILLA AIR</li>
+    </ul>
+   </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* headerここから */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.475);
+}
+.left {
+    width: 200px;
+    height: 40px;
+    padding: 20px 0 0 20px;
+    font-size: 30px;
+    font-family: 'Phosphate',sans-serif;
+    color: black;
+}
+.header-right {
+    display: flex;
+    padding: 20px 0 0 20px;
+}
+.icons {
+    margin-left: 30px;
+    font-family: 'Skia-Regular_Black',sans-serif;
+    color: black;
+}
+.icons:last-child {
+    margin-right: 30px;
+}
+.fa-search {
+    margin-left: 12px;
+    font-size: 20px;
+}
+.fa-user-circle {
+    margin-left: 15px;
+    font-size: 20px;
+}
+.fa-home {
+    font-size: 20px;
+    margin-left: 20px;
+}
+.fa-map-marked-alt {
+    margin-left: 5px;
+    font-size: 20px;
+}
+/* headerここまで */
+
+/* 検索の入力画面ここから */
+main div {
+    background: rgb(74, 245, 0);
+    height: 35px;
+    font-size: 20px;
+    font-family: 'Papyrus-Condensed',sans-serif;
+    padding: 10px 0 0 20px;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    background: #69b6cec3;
+    padding: 15px;
+    height: 60px;
+}
+.main input {
+    width: 80%;
+    color: white;
+    font-size: 20px;
+    text-indent: 22px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 25px; 
+    border: none;
+    height: 30px;
+}
+#task {
+    font-family: 'PT Sans',sans-serif;
+}
+.main input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
+.main i {
+    color: blue;
+    font-size: 25px;
+}
+.main i:hover {
+    opacity: .6;
+}
+/* 検索の入力画面ここまで */
+@media screen and (min-width: 411px) and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:360px) and (max-width: 410px) {
+    .header {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .header {
+        width: 320px;
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+    main div {
+        width: 340px;
+    }
+}
